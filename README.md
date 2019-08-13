@@ -74,3 +74,30 @@ git branch --set-upstream-to=origin/dev
 ### Step5:再次拉取 验证
 
 git pull
+
+## 合并分支
+### Step1：切换到开发分支并git pull更新本地
+git checkout dev20190813
+
+git pull
+
+### Step2：切换到master并git pull更新本地
+git checkout master 
+git pull
+
+### Step3：合并dev到master
+git merge dev20190813
+
+git push origin master
+
+
+
+
+## 删除远程分支
+### Step1：查看远程分支
+git branch -r
+### Step2：删除远程
+ git branch -r -d  origin/dev20190813
+### Step3：删除指令push到远端
+ git push origin :dev20190813   #冒号一定要有
+
