@@ -38,19 +38,19 @@ $git pull
 
 
 ## 从当前分支拉copy开发分支
-
-$git checkout -b dev
-
+### Step1:创建分支
+git checkout -b dev
 Switched to a new branch 'dev'
 
 
 
-3. 把新建的分支push到远端
-$git push origin dev
+### Step2:把新建的分支push到远端 <br>
+git push origin dev
 
 
 
-4. 拉取远端分支$git pull
+### Step3:拉取远端分支 <br>
+git pull
 
 There is no tracking information for the current branch.
 Please specify which branch you want to merge with.
@@ -65,14 +65,12 @@ git branch --set-upstream-to=origin/<branch> dev
 经过验证，当前的分支并没有和本地分支关联，根据提示进行下一步：
 
 
-5. 关联
+### Step4:关联
 
 git branch --set-upstream-to=origin/dev
 
 注意：这里branch之后都是没有空格的，如果有空格则是错误命令
 
-
-
-6. 再次拉取 验证
+### Step5:再次拉取 验证
 
 git pull
