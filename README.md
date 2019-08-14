@@ -82,7 +82,7 @@ git checkout dev20190813
 git pull
 
 ### Step2：切换到master并git pull更新本地
-git checkout master 
+git checkout master <br>
 git pull
 
 ### Step3：合并dev到master
